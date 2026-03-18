@@ -1,5 +1,5 @@
 /* ============================================================
-   ROBSON CONCRETE & CONSTRUCTION â script.js
+   ROBSON CONCRETE & CONSTRUCTION — script.js
    ============================================================ */
 
 'use strict';
