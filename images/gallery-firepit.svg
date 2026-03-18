@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#080810;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0808;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff8c00;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#c0392b;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#7b1426;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#3d0a13;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="ambientGlow" cx="50%" cy="70%" r="50%">
+      <stop offset="0%" style="stop-color:#c0392b;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:0" />
+    </radialGradient>
+    <filter id="fireBlur">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <pattern id="patioStamp" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#2a2020"/>
+      <rect x="2" y="2" width="76" height="76" rx="3" fill="#2d2323" stroke="#1a1212" stroke-width="1"/>
+      <line x1="40" y1="0" x2="40" y2="80" stroke="#1a1212" stroke-width="1.5" opacity="0.5"/>
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#1a1212" stroke-width="1.5" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <!-- Dark night background -->
+  <rect width="1920" height="1080" fill="url(#darkBg)"/>
+  <!-- Ambient fire glow on sky -->
+  <ellipse cx="960" cy="800" rx="700" ry="500" fill="url(#ambientGlow)"/>
+  <!-- Ground/patio -->
+  <rect x="0" y="620" width="1920" height="460" fill="url(#patioStamp)"/>
+  <!-- Fire glow on ground -->
+  <ellipse cx="960" cy="900" rx="400" ry="150" fill="#7b1426" opacity="0.3" filter="url(#fireBlur)"/>
+  <!-- Fire pit concrete ring -->
+  <circle cx="960" cy="820" r="180" fill="#2a2020" stroke="#4a3a3a" stroke-width="20"/>
+  <!-- Fire pit inner bowl -->
+  <circle cx="960" cy="820" r="155" fill="#1a1010"/>
+  <!-- Fire embers glow -->
+  <circle cx="960" cy="830" r="80" fill="#c0392b" opacity="0.6" filter="url(#softGlow)"/>
+  <circle cx="960" cy="825" r="50" fill="#e74c3c" opacity="0.7" filter="url(#softGlow)"/>
+  <!-- Fire flames -->
+  <path d="M 920 780 Q 940 720 960 680 Q 975 640 980 600 Q 990 640 985 700 Q 990 660 1000 640 Q 1005 680 995 730 Q 1020 690 1030 660 Q 1030 710 1010 760 Q 1040 740 1050 720 Q 1045 770 1020 800 Q 980 820 940 810 Q 910 800 920 780 Z" fill="#ff8c00" opacity="0.9"/>
+  <path d="M 940 790 Q 955 740 960 700 Q 970 740 965 790 Z" fill="#ffcc00" opacity="0.7"/>
+  <path d="M 955 785 Q 962 755 967 730 Q 972 755 968 785 Z" fill="#ffffff" opacity="0.4"/>
+  <!-- Flame glow -->
+  <ellipse cx="960" cy="720" rx="80" ry="120" fill="url(#fireGlow)" filter="url(#fireBlur)" opacity="0.8"/>
+  <!-- Outer ring cap detail -->
+  <circle cx="960" cy="820" r="180" fill="none" stroke="#5a4a4a" stroke-width="8"/>
+  <circle cx="960" cy="820" r="188" fill="none" stroke="#3a3030" stroke-width="4"/>
+  <!-- Seating around fire pit -->
+  <!-- Chair 1 - bottom left -->
+  <rect x="640" y="920" width="90" height="50" rx="5" fill="#2a2020" opacity="0.9"/>
+  <rect x="630" y="900" width="110" height="30" rx="4" fill="#2a2020" opacity="0.9"/>
+  <!-- Chair 2 - bottom right -->
+  <rect x="1190" y="920" width="90" height="50" rx="5" fill="#2a2020" opacity="0.9"/>
+  <rect x="1180" y="900" width="110" height="30" rx="4" fill="#2a2020" opacity="0.9"/>
+  <!-- Small side tables -->
+  <rect x="760" y="910" width="60" height="35" rx="3" fill="#3a2a2a" opacity="0.8"/>
+  <rect x="1100" y="910" width="60" height="35" rx="3" fill="#3a2a2a" opacity="0.8"/>
+  <!-- Stars -->
+  <circle cx="100" cy="80" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="300" cy="50" r="1" fill="white" opacity="0.7"/>
+  <circle cx="500" cy="100" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="700" cy="70" r="1" fill="white" opacity="0.6"/>
+  <circle cx="1200" cy="90" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="1400" cy="60" r="1" fill="white" opacity="0.5"/>
+  <circle cx="1600" cy="110" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="1800" cy="75" r="1" fill="white" opacity="0.7"/>
+  <!-- Firelight cast on nearby surfaces -->
+  <rect x="700" y="640" width="520" height="10" fill="#c0392b" opacity="0.15"/>
+  <!-- Dark overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.2"/>
+</svg>
