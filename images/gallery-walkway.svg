@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="walkSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#1e2840;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1a0d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="walkConc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4545;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2525;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1a0d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#080f08;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dawnGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3d0a13;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#7b1426;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#3d0a13;stop-opacity:0" />
+    </linearGradient>
+    <filter id="walkBlur">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <pattern id="walkConcPat" x="0" y="0" width="120" height="60" patternUnits="userSpaceOnUse">
+      <rect width="120" height="60" fill="#3a3535"/>
+      <rect x="2" y="2" width="56" height="56" rx="2" fill="#3d3838"/>
+      <rect x="62" y="2" width="56" height="56" rx="2" fill="#3a3535"/>
+      <circle cx="30" cy="30" r="2" fill="#444" opacity="0.3"/>
+      <circle cx="90" cy="30" r="1.5" fill="#444" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#walkSky)"/>
+  <!-- Horizon glow -->
+  <rect x="0" y="380" width="1920" height="80" fill="url(#dawnGlow)"/>
+  <!-- Grass/lawn left -->
+  <rect x="0" y="460" width="780" height="620" fill="url(#grassGrad)"/>
+  <!-- Grass/lawn right -->
+  <rect x="1140" y="460" width="780" height="620" fill="url(#grassGrad)"/>
+  <!-- Walkway perspective - curved path leading forward -->
+  <polygon points="780,1080 1140,1080 1060,460 860,460" fill="url(#walkConcPat)"/>
+  <!-- Walkway border highlights -->
+  <line x1="780" y1="1080" x2="860" y2="460" stroke="#6a6060" stroke-width="3" opacity="0.7"/>
+  <line x1="1140" y1="1080" x2="1060" y2="460" stroke="#6a6060" stroke-width="3" opacity="0.7"/>
+  <!-- Walkway joints (horizontal lines in perspective) -->
+  <line x1="865" y1="500" x2="1055" y2="500" stroke="#2a2525" stroke-width="2" opacity="0.7"/>
+  <line x1="853" y1="560" x2="1067" y2="560" stroke="#2a2525" stroke-width="2" opacity="0.7"/>
+  <line x1="840" y1="640" x2="1080" y2="640" stroke="#2a2525" stroke-width="2" opacity="0.7"/>
+  <line x1="826" y1="740" x2="1094" y2="740" stroke="#2a2525" stroke-width="2" opacity="0.7"/>
+  <line x1="813" y1="850" x2="1107" y2="850" stroke="#2a2525" stroke-width="2" opacity="0.7"/>
+  <line x1="800" y1="970" x2="1120" y2="970" stroke="#2a2525" stroke-width="2" opacity="0.7"/>
+  <!-- Grass blades / ground cover suggestion -->
+  <!-- Left border landscape -->
+  <path d="M 200 700 Q 230 680 260 700 Q 280 660 300 700 Q 330 675 360 700" fill="none" stroke="#0d1a0d" stroke-width="8" opacity="0.7"/>
+  <path d="M 400 750 Q 430 720 460 750 Q 490 715 520 750 Q 550 720 580 750" fill="none" stroke="#0d1a0d" stroke-width="8" opacity="0.7"/>
+  <!-- Right border landscape -->
+  <path d="M 1360 700 Q 1390 680 1420 700 Q 1440 660 1460 700 Q 1490 675 1520 700" fill="none" stroke="#0d1a0d" stroke-width="8" opacity="0.7"/>
+  <!-- Low border plants -->
+  <ellipse cx="780" cy="700" rx="60" ry="30" fill="#0a1a0a" opacity="0.8"/>
+  <ellipse cx="780" cy="900" rx="70" ry="35" fill="#0a1a0a" opacity="0.8"/>
+  <ellipse cx="1140" cy="700" rx="60" ry="30" fill="#0a1a0a" opacity="0.8"/>
+  <ellipse cx="1140" cy="900" rx="70" ry="35" fill="#0a1a0a" opacity="0.8"/>
+  <!-- Trees in distance -->
+  <ellipse cx="500" cy="350" rx="80" ry="110" fill="#080f08" opacity="0.9"/>
+  <rect x="492" y="440" width="16" height="50" fill="#080f08" opacity="0.9"/>
+  <ellipse cx="1420" cy="360" rx="70" ry="100" fill="#080f08" opacity="0.9"/>
+  <rect x="1413" y="430" width="14" height="50" fill="#080f08" opacity="0.9"/>
+  <!-- House silhouette end of walkway -->
+  <polygon points="800,460 960,340 1120,460" fill="#0a0a15" opacity="0.95"/>
+  <rect x="800" y="460" width="320" height="100" fill="#0a0a15" opacity="0.95"/>
+  <rect x="920" y="490" width="80" height="70" fill="#1a2a3a" opacity="0.7"/>
+  <!-- Pathway lighting posts -->
+  <rect x="763" y="640" width="8" height="80" fill="#3a3535"/>
+  <circle cx="767" cy="635" r="10" fill="#d4a844" opacity="0.7" filter="url(#walkBlur)"/>
+  <rect x="1149" y="640" width="8" height="80" fill="#3a3535"/>
+  <circle cx="1153" cy="635" r="10" fill="#d4a844" opacity="0.7" filter="url(#walkBlur)"/>
+  <rect x="773" y="820" width="8" height="70" fill="#3a3535"/>
+  <circle cx="777" cy="815" r="10" fill="#d4a844" opacity="0.7" filter="url(#walkBlur)"/>
+  <rect x="1139" y="820" width="8" height="70" fill="#3a3535"/>
+  <circle cx="1143" cy="815" r="10" fill="#d4a844" opacity="0.7" filter="url(#walkBlur)"/>
+  <!-- Dark overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.25"/>
+</svg>
