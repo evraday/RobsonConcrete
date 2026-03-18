@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="poolGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2a40;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a3f3f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2020;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b1426;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3d0a13;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="stampPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="none"/>
+      <rect x="2" y="2" width="36" height="36" rx="2" fill="none" stroke="#7a6a5a" stroke-width="0.8" opacity="0.4"/>
+      <rect x="42" y="2" width="36" height="36" rx="2" fill="none" stroke="#7a6a5a" stroke-width="0.8" opacity="0.4"/>
+      <rect x="2" y="42" width="36" height="36" rx="2" fill="none" stroke="#7a6a5a" stroke-width="0.8" opacity="0.4"/>
+      <rect x="42" y="42" width="36" height="36" rx="2" fill="none" stroke="#7a6a5a" stroke-width="0.8" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+  <!-- Distant sky glow -->
+  <ellipse cx="960" cy="200" rx="700" ry="200" fill="#3d0a13" opacity="0.4"/>
+  <!-- Patio floor - stamped concrete -->
+  <rect x="200" y="600" width="1520" height="480" fill="#3a3030"/>
+  <rect x="200" y="600" width="1520" height="480" fill="url(#stampPattern)"/>
+  <!-- Pool -->
+  <ellipse cx="960" cy="680" rx="380" ry="180" fill="url(#poolGrad)"/>
+  <!-- Pool water shimmer -->
+  <ellipse cx="960" cy="680" rx="375" ry="175" fill="none" stroke="#2a6a9e" stroke-width="3" opacity="0.5"/>
+  <line x1="600" y1="660" x2="1320" y2="680" stroke="#4a9abe" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="690" x2="1320" y2="700" stroke="#4a9abe" stroke-width="1" opacity="0.2"/>
+  <line x1="600" y1="720" x2="1320" y2="715" stroke="#4a9abe" stroke-width="1" opacity="0.25"/>
+  <!-- Pool coping (concrete edge) -->
+  <ellipse cx="960" cy="680" rx="400" ry="195" fill="none" stroke="#6a5a5a" stroke-width="8" opacity="0.7"/>
+  <!-- Patio furniture silhouette - chairs -->
+  <rect x="350" y="820" width="80" height="60" rx="5" fill="#1a1a1a" opacity="0.8"/>
+  <rect x="340" y="780" width="100" height="50" rx="5" fill="#1a1a1a" opacity="0.8"/>
+  <rect x="450" y="820" width="80" height="60" rx="5" fill="#1a1a1a" opacity="0.8"/>
+  <!-- Table -->
+  <ellipse cx="450" cy="820" rx="70" ry="20" fill="#2a2a2a" opacity="0.9"/>
+  <rect x="445" y="820" width="10" height="40" fill="#2a2a2a" opacity="0.9"/>
+  <!-- Fire pit glow - right side -->
+  <circle cx="1450" cy="820" r="60" fill="#7b1426" opacity="0.4" filter="url(#glow)"/>
+  <circle cx="1450" cy="820" r="35" fill="#c0392b" opacity="0.5"/>
+  <circle cx="1450" cy="820" r="20" fill="#e74c3c" opacity="0.6"/>
+  <!-- Fire pit ring -->
+  <circle cx="1450" cy="820" r="70" fill="none" stroke="#5a4a4a" stroke-width="12" opacity="0.8"/>
+  <!-- Lights along pool edge -->
+  <circle cx="620" cy="680" r="8" fill="#f0e080" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="720" cy="620" r="6" fill="#f0e080" opacity="0.7"/>
+  <circle cx="1200" cy="620" r="6" fill="#f0e080" opacity="0.7"/>
+  <circle cx="1300" cy="680" r="8" fill="#f0e080" opacity="0.9" filter="url(#glow)"/>
+  <!-- Background wall/hedge -->
+  <rect x="0" y="200" width="1920" height="400" fill="#0a140a" opacity="0.7"/>
+  <!-- String lights -->
+  <path d="M 100 300 Q 300 350 500 300 Q 700 250 900 300 Q 1100 350 1300 300 Q 1500 250 1700 300 Q 1800 320 1920 310" fill="none" stroke="#333" stroke-width="1.5"/>
+  <circle cx="200" cy="325" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="400" cy="275" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="600" cy="290" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="800" cy="320" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="1000" cy="285" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="1200" cy="310" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="1400" cy="270" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="1600" cy="295" r="4" fill="#f0e080" opacity="0.8"/>
+  <circle cx="1800" cy="315" r="4" fill="#f0e080" opacity="0.8"/>
+  <!-- Dark overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.3"/>
+</svg>
