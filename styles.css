@@ -523,10 +523,12 @@ p  { margin-bottom: 1rem; }
   background: var(--gradient-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 0;
   transition: all var(--transition);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .service-card::before {
   content: '';
@@ -537,6 +539,7 @@ p  { margin-bottom: 1rem; }
   transform: scaleX(0);
   transition: transform var(--transition);
   transform-origin: left;
+  z-index: 1;
 }
 .service-card:hover {
   transform: translateY(-6px);
@@ -545,16 +548,28 @@ p  { margin-bottom: 1rem; }
 }
 .service-card:hover::before { transform: scaleX(1); }
 
-.service-icon {
-  width: 56px; height: 56px;
-  background: rgba(139,26,26,0.15);
-  border: 1px solid var(--color-maroon);
-  border-radius: var(--radius);
+.service-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.service-card:hover .service-img img {
+  transform: scale(1.07);
+}
+
+.service-card-body {
+  padding: 1.5rem 2rem 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-  font-size: 1.6rem;
+  flex-direction: column;
+  flex: 1;
 }
 
 .service-card h3 {
@@ -566,6 +581,7 @@ p  { margin-bottom: 1rem; }
   color: var(--color-text-muted);
   font-size: 0.9rem;
   margin-bottom: 1.25rem;
+  flex: 1;
 }
 .service-card .service-link {
   font-family: var(--font-head);
