@@ -319,7 +319,7 @@ p  { margin-bottom: 1rem; }
     gap: 0.5rem;
     align-items: flex-start;
   }
-  .nav-links.mobile-open .nav-cta { display: flex; margin: 0.5rem 0 0; }
+
   .nav-dropdown-menu {
     position: static;
     display: none;

@@ -53,10 +53,7 @@
     });
   });
 
-  // Move nav-cta into mobile links
-  if (navCta) {
-    links.appendChild(navCta.cloneNode(true));
-  }
+
 })();
 
 /* ---- Hero slider ---- */
