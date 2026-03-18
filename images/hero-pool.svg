@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bgPool" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#050810;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e5f8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0d3d5e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#071e2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="deckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3535;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sunReflect" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7b1426;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#c0392b;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7b1426;stop-opacity:0" />
+    </linearGradient>
+    <filter id="waterBlur">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <pattern id="deckTile" x="0" y="0" width="100" height="50" patternUnits="userSpaceOnUse">
+      <rect width="100" height="50" fill="#3a3030"/>
+      <rect x="1" y="1" width="98" height="23" fill="#3d3333" rx="1"/>
+      <rect x="1" y="26" width="98" height="23" fill="#3d3333" rx="1"/>
+      <line x1="50" y1="0" x2="50" y2="25" stroke="#2a2020" stroke-width="1"/>
+      <line x1="0" y1="25" x2="100" y2="25" stroke="#2a2020" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <!-- Background sky -->
+  <rect width="1920" height="1080" fill="url(#bgPool)"/>
+  <!-- Subtle maroon sky glow -->
+  <ellipse cx="960" cy="0" rx="900" ry="300" fill="#3d0a13" opacity="0.5"/>
+  <!-- Pool deck - top -->
+  <rect x="0" y="500" width="1920" height="120" fill="url(#deckTile)"/>
+  <!-- Pool water - main body -->
+  <rect x="200" y="580" width="1520" height="500" fill="url(#waterGrad)"/>
+  <!-- Pool water reflection shimmer -->
+  <rect x="200" y="580" width="1520" height="500" fill="url(#sunReflect)" opacity="0.6"/>
+  <!-- Water ripple lines -->
+  <path d="M 250 620 Q 500 612 750 622 Q 1000 632 1250 620 Q 1450 610 1700 622" fill="none" stroke="#4a9abe" stroke-width="1.5" opacity="0.4"/>
+  <path d="M 250 660 Q 500 650 750 662 Q 1000 674 1250 660 Q 1450 648 1700 660" fill="none" stroke="#4a9abe" stroke-width="1.5" opacity="0.3"/>
+  <path d="M 250 710 Q 500 698 750 712 Q 1000 726 1250 710 Q 1450 696 1700 710" fill="none" stroke="#4a9abe" stroke-width="1.5" opacity="0.3"/>
+  <path d="M 250 760 Q 600 748 960 762 Q 1300 776 1700 760" fill="none" stroke="#4a9abe" stroke-width="1" opacity="0.25"/>
+  <!-- Pool lane lines (subtle) -->
+  <line x1="560" y1="580" x2="560" y2="1080" stroke="#2a5a7a" stroke-width="4" opacity="0.3"/>
+  <line x1="960" y1="580" x2="960" y2="1080" stroke="#2a5a7a" stroke-width="4" opacity="0.3"/>
+  <line x1="1360" y1="580" x2="1360" y2="1080" stroke="#2a5a7a" stroke-width="4" opacity="0.3"/>
+  <!-- Pool coping (concrete edge) -->
+  <rect x="200" y="572" width="1520" height="14" fill="#6a5a5a" opacity="0.9"/>
+  <rect x="192" y="580" width="10" height="500" fill="#5a4a4a" opacity="0.7"/>
+  <rect x="1718" y="580" width="10" height="500" fill="#5a4a4a" opacity="0.7"/>
+  <!-- Pool deck sides -->
+  <rect x="0" y="500" width="200" height="580" fill="url(#deckTile)"/>
+  <rect x="1720" y="500" width="200" height="580" fill="url(#deckTile)"/>
+  <!-- Lounge chairs -->
+  <rect x="300" y="520" width="120" height="45" rx="5" fill="#2a2020" opacity="0.9"/>
+  <rect x="290" y="515" width="30" height="55" rx="3" fill="#2a2020" opacity="0.9"/>
+  <rect x="1500" y="520" width="120" height="45" rx="5" fill="#2a2020" opacity="0.9"/>
+  <rect x="1600" y="515" width="30" height="55" rx="3" fill="#2a2020" opacity="0.9"/>
+  <!-- Pool lights underwater glow -->
+  <circle cx="400" cy="620" r="30" fill="#4a9abe" opacity="0.2"/>
+  <circle cx="960" cy="620" r="30" fill="#4a9abe" opacity="0.2"/>
+  <circle cx="1520" cy="620" r="30" fill="#4a9abe" opacity="0.2"/>
+  <!-- Building/house backdrop -->
+  <rect x="0" y="0" width="1920" height="510" fill="#070c15" opacity="0.6"/>
+  <!-- Distant lights/windows -->
+  <rect x="150" y="200" width="20" height="15" rx="2" fill="#d4a844" opacity="0.5"/>
+  <rect x="200" y="180" width="20" height="15" rx="2" fill="#d4a844" opacity="0.4"/>
+  <rect x="1700" y="220" width="20" height="15" rx="2" fill="#d4a844" opacity="0.5"/>
+  <rect x="1750" y="190" width="20" height="15" rx="2" fill="#d4a844" opacity="0.4"/>
+  <!-- Dark overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.3"/>
+</svg>
