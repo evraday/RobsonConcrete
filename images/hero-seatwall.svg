@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="nightBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#08080f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2020;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ledGlow1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b1426;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#7b1426;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="ledGlow2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e8a;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#2c3e8a;stop-opacity:0" />
+    </linearGradient>
+    <filter id="ledBlur">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <pattern id="stoneBlock" x="0" y="0" width="120" height="60" patternUnits="userSpaceOnUse">
+      <rect width="120" height="60" fill="#3a3030"/>
+      <rect x="1" y="1" width="58" height="28" fill="#403535" rx="1"/>
+      <rect x="62" y="1" width="57" height="28" fill="#3d3232" rx="1"/>
+      <rect x="1" y="31" width="38" height="28" fill="#3d3232" rx="1"/>
+      <rect x="41" y="31" width="38" height="28" fill="#403535" rx="1"/>
+      <rect x="81" y="31" width="38" height="28" fill="#3d3232" rx="1"/>
+    </pattern>
+  </defs>
+  <!-- Night sky -->
+  <rect width="1920" height="1080" fill="url(#nightBg)"/>
+  <!-- Stars -->
+  <circle cx="150" cy="60" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="90" r="1" fill="white" opacity="0.8"/>
+  <circle cx="550" cy="40" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="750" cy="80" r="1" fill="white" opacity="0.7"/>
+  <circle cx="950" cy="50" r="2" fill="white" opacity="0.5"/>
+  <circle cx="1150" cy="70" r="1" fill="white" opacity="0.8"/>
+  <circle cx="1350" cy="45" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="1550" cy="85" r="1" fill="white" opacity="0.7"/>
+  <circle cx="1750" cy="55" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="250" cy="130" r="1" fill="white" opacity="0.5"/>
+  <circle cx="450" cy="155" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="660" cy="120" r="1" fill="white" opacity="0.7"/>
+  <circle cx="860" cy="140" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="1060" cy="110" r="1" fill="white" opacity="0.8"/>
+  <circle cx="1260" cy="160" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="1460" cy="125" r="1" fill="white" opacity="0.7"/>
+  <circle cx="1660" cy="145" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="1860" cy="115" r="1" fill="white" opacity="0.8"/>
+  <!-- Ground -->
+  <rect x="0" y="700" width="1920" height="380" fill="#0d0d0d"/>
+  <!-- Patio surface -->
+  <rect x="0" y="750" width="1920" height="330" fill="#1a1515" opacity="0.8"/>
+  <!-- Seat wall - left section -->
+  <rect x="100" y="550" width="500" height="200" fill="url(#stoneBlock)"/>
+  <!-- Seat wall top cap -->
+  <rect x="90" y="540" width="520" height="20" fill="#5a5050" opacity="0.9"/>
+  <!-- LED strip under left wall cap - maroon -->
+  <rect x="100" y="560" width="500" height="8" fill="#7b1426" opacity="0.8"/>
+  <rect x="90" y="555" width="520" height="15" fill="url(#ledGlow1)" filter="url(#ledBlur)" opacity="0.8"/>
+  <!-- Seat wall - right section -->
+  <rect x="1320" y="550" width="500" height="200" fill="url(#stoneBlock)"/>
+  <!-- Seat wall top cap -->
+  <rect x="1310" y="540" width="520" height="20" fill="#5a5050" opacity="0.9"/>
+  <!-- LED strip under right wall cap - blue -->
+  <rect x="1320" y="560" width="500" height="8" fill="#2c3e8a" opacity="0.8"/>
+  <rect x="1310" y="555" width="520" height="15" fill="url(#ledGlow2)" filter="url(#ledBlur)" opacity="0.8"/>
+  <!-- Center lower wall section -->
+  <rect x="700" y="640" width="520" height="110" fill="url(#stoneBlock)"/>
+  <rect x="690" y="630" width="540" height="18" fill="#5a5050" opacity="0.9"/>
+  <!-- Center LED - maroon -->
+  <rect x="700" y="648" width="520" height="6" fill="#7b1426" opacity="0.7"/>
+  <rect x="690" y="643" width="540" height="12" fill="url(#ledGlow1)" filter="url(#ledBlur)" opacity="0.6"/>
+  <!-- Glow pools on ground from LEDs -->
+  <ellipse cx="350" cy="760" rx="250" ry="40" fill="#7b1426" opacity="0.15" filter="url(#softBlur)"/>
+  <ellipse cx="1570" cy="760" rx="250" ry="40" fill="#2c3e8a" opacity="0.15" filter="url(#softBlur)"/>
+  <ellipse cx="960" cy="760" rx="200" ry="30" fill="#7b1426" opacity="0.1" filter="url(#softBlur)"/>
+  <!-- Landscape plants silhouette -->
+  <ellipse cx="50" cy="560" rx="50" ry="70" fill="#050f05" opacity="0.9"/>
+  <ellipse cx="130" cy="540" rx="40" ry="60" fill="#050f05" opacity="0.9"/>
+  <ellipse cx="1790" cy="560" rx="50" ry="70" fill="#050f05" opacity="0.9"/>
+  <ellipse cx="1870" cy="540" rx="40" ry="60" fill="#050f05" opacity="0.9"/>
+  <!-- Dark overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.25"/>
+</svg>
