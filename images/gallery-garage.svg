@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="garageBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a20;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightBeam" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="reflection" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" style="stop-color:#4a5a7a;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#4a5a7a;stop-opacity:0" />
+    </radialGradient>
+    <filter id="reflectBlur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <pattern id="concreteFloor" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="#2e2e38"/>
+      <rect x="1" y="1" width="198" height="198" fill="#303040" rx="1"/>
+      <!-- Subtle aggregate texture -->
+      <circle cx="30" cy="40" r="2" fill="#383848" opacity="0.5"/>
+      <circle cx="80" cy="80" r="1.5" fill="#353545" opacity="0.4"/>
+      <circle cx="140" cy="30" r="2" fill="#383848" opacity="0.5"/>
+      <circle cx="170" cy="120" r="1" fill="#353545" opacity="0.4"/>
+      <circle cx="50" cy="160" r="2" fill="#383848" opacity="0.5"/>
+      <circle cx="110" cy="150" r="1.5" fill="#353545" opacity="0.4"/>
+      <circle cx="160" cy="180" r="2" fill="#383848" opacity="0.5"/>
+      <!-- Expansion joint lines -->
+      <line x1="0" y1="100" x2="200" y2="100" stroke="#1a1a22" stroke-width="2"/>
+      <line x1="100" y1="0" x2="100" y2="200" stroke="#1a1a22" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <!-- Garage interior background -->
+  <rect width="1920" height="1080" fill="url(#garageBg)"/>
+  <!-- Walls -->
+  <rect x="0" y="0" width="1920" height="600" fill="#161620"/>
+  <!-- Side wall darker -->
+  <rect x="0" y="0" width="200" height="1080" fill="#0f0f18" opacity="0.7"/>
+  <rect x="1720" y="0" width="200" height="1080" fill="#0f0f18" opacity="0.7"/>
+  <!-- Ceiling -->
+  <rect x="0" y="0" width="1920" height="120" fill="#1a1a25"/>
+  <!-- Overhead light fixtures -->
+  <rect x="400" y="0" width="200" height="20" rx="5" fill="#3a3a4a"/>
+  <rect x="860" y="0" width="200" height="20" rx="5" fill="#3a3a4a"/>
+  <rect x="1320" y="0" width="200" height="20" rx="5" fill="#3a3a4a"/>
+  <!-- Light glow from fixtures -->
+  <polygon points="400,20 600,20 800,600 200,600" fill="url(#lightBeam)" opacity="0.6"/>
+  <polygon points="860,20 1060,20 1260,600 660,600" fill="url(#lightBeam)" opacity="0.6"/>
+  <polygon points="1320,20 1520,20 1720,600 1120,600" fill="url(#lightBeam)" opacity="0.6"/>
+  <!-- Bright LED strips on ceiling -->
+  <rect x="390" y="18" width="220" height="4" fill="#e0e8ff" opacity="0.9"/>
+  <rect x="850" y="18" width="220" height="4" fill="#e0e8ff" opacity="0.9"/>
+  <rect x="1310" y="18" width="220" height="4" fill="#e0e8ff" opacity="0.9"/>
+  <!-- Polished concrete floor -->
+  <rect x="0" y="580" width="1920" height="500" fill="url(#concreteFloor)"/>
+  <!-- Floor sheen / reflection -->
+  <rect x="0" y="580" width="1920" height="500" fill="url(#reflection)" filter="url(#reflectBlur)" opacity="0.5"/>
+  <!-- Floor reflection of lights -->
+  <ellipse cx="500" cy="650" rx="180" ry="60" fill="#4a5a7a" opacity="0.12" filter="url(#reflectBlur)"/>
+  <ellipse cx="960" cy="650" rx="180" ry="60" fill="#4a5a7a" opacity="0.12" filter="url(#reflectBlur)"/>
+  <ellipse cx="1420" cy="650" rx="180" ry="60" fill="#4a5a7a" opacity="0.12" filter="url(#reflectBlur)"/>
+  <!-- Wall storage shelving (right) -->
+  <rect x="1700" y="200" width="220" height="15" fill="#2a2a35"/>
+  <rect x="1700" y="350" width="220" height="15" fill="#2a2a35"/>
+  <rect x="1700" y="500" width="220" height="15" fill="#2a2a35"/>
+  <rect x="1700" y="200" width="10" height="315" fill="#222230"/>
+  <rect x="1905" y="200" width="10" height="315" fill="#222230"/>
+  <!-- Tool cabinet silhouette (left) -->
+  <rect x="50" y="350" width="150" height="250" rx="3" fill="#1e1e28"/>
+  <rect x="60" y="360" width="130" height="110" rx="2" fill="#252530"/>
+  <rect x="60" y="480" width="130" height="110" rx="2" fill="#252530"/>
+  <!-- Drawer handles -->
+  <rect x="115" y="410" width="40" height="6" rx="3" fill="#3a3a4a"/>
+  <rect x="115" y="530" width="40" height="6" rx="3" fill="#3a3a4a"/>
+  <!-- Floor expansion joints perspective -->
+  <line x1="0" y1="700" x2="1920" y2="700" stroke="#1a1a22" stroke-width="2.5" opacity="0.6"/>
+  <line x1="0" y1="850" x2="1920" y2="850" stroke="#1a1a22" stroke-width="2.5" opacity="0.6"/>
+  <line x1="0" y1="1000" x2="1920" y2="1000" stroke="#1a1a22" stroke-width="2.5" opacity="0.6"/>
+  <line x1="480" y1="580" x2="480" y2="1080" stroke="#1a1a22" stroke-width="2.5" opacity="0.6"/>
+  <line x1="960" y1="580" x2="960" y2="1080" stroke="#1a1a22" stroke-width="2.5" opacity="0.6"/>
+  <line x1="1440" y1="580" x2="1440" y2="1080" stroke="#1a1a22" stroke-width="2.5" opacity="0.6"/>
+  <!-- Dark overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.15"/>
+</svg>
