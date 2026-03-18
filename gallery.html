@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concrete Project Gallery | Robson Concrete &amp; Construction Ohio</title>
+  <meta name="description" content="Browse our portfolio of completed concrete driveways, patios, pool decks, fire pits &amp; more across Northeast Ohio. See what Robson Concrete &amp; Construction can do for your home." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://robsonconcrete.com/gallery.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Concrete Project Gallery | Robson Concrete &amp; Construction Ohio" />
+  <meta property="og:description" content="Browse our portfolio of completed concrete driveways, patios, pool decks, fire pits &amp; more across Northeast Ohio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robsonconcrete.com/gallery.html" />
+  <meta property="og:image" content="images/hero-patio.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Gallery filter tabs */
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+    .filter-btn {
+      padding: 0.5rem 1.25rem;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 50px;
+      font-family: var(--font-head);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-silver);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--color-maroon);
+      border-color: var(--color-maroon);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Home">
+      <span class="logo-main"><span>Robson</span> Concrete</span>
+      <span class="logo-sub">&amp; Construction Â· Ohio</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#services">Services</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="services/driveways.html">Driveways</a></li>
+          <li><a href="services/patios.html">Patios</a></li>
+          <li><a href="services/walkways.html">Walkways</a></li>
+          <li><a href="services/shed-pads.html">Shed Pads</a></li>
+          <li><a href="services/garage-basement.html">Garage &amp; Basement Floors</a></li>
+          <li><a href="services/fire-pits.html">Fire Pits</a></li>
+          <li><a href="services/pool-decks.html">Pool Decks</a></li>
+          <li><a href="services/seat-walls.html">Seat Walls</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Free Estimate</a>
+    <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero" aria-labelledby="gallery-hero-heading">
+  <div class="container">
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep" aria-hidden="true">âº</span>
+        <span>Gallery</span>
+      </nav>
+      <h1 id="gallery-hero-heading">Our Project Gallery</h1>
+      <p>Explore our portfolio of completed concrete projects â driveways, patios, pool decks, fire pits, and more across Northeast Ohio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY SECTION
+     ============================================================ -->
+<section class="section" style="background: var(--color-bg);" aria-labelledby="gallery-main-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="eyebrow">Our Portfolio</span>
+      <h2 id="gallery-main-heading">Craftsmanship in Every Pour</h2>
+      <div class="divider"></div>
+      <p>Every project in our gallery represents our commitment to quality, precision, and lasting results. Browse our work and imagine what we can do for your property.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="gallery-filters fade-in fade-in-delay-1" role="group" aria-label="Gallery filter options">
+      <button class="filter-btn active" type="button">All Projects</button>
+      <button class="filter-btn" type="button">Driveways</button>
+      <button class="filter-btn" type="button">Patios</button>
+      <button class="filter-btn" type="button">Pool Decks</button>
+      <button class="filter-btn" type="button">Fire Pits</button>
+      <button class="filter-btn" type="button">More</button>
+    </div>
+
+    <!-- Full Gallery Grid -->
+    <div class="gallery-full-grid fade-in fade-in-delay-2" role="list" aria-label="Project photo gallery">
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/hero-driveway.png" tabindex="0" aria-label="Open full image: Custom Concrete Driveway">
+        <img src="images/hero-driveway.png" alt="Custom concrete driveway installation in Northeast Ohio" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Custom Concrete Driveway</div>
+            <div class="overlay-sub">Driveways</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/hero-patio.png" tabindex="0" aria-label="Open full image: Luxury Patio & Pool Area">
+        <img src="images/hero-patio.png" alt="Luxury stamped concrete patio with pool area" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Luxury Patio &amp; Pool Area</div>
+            <div class="overlay-sub">Patios</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/hero-pool.png" tabindex="0" aria-label="Open full image: Modern Pool Deck">
+        <img src="images/hero-pool.png" alt="Modern concrete pool deck with non-slip finish" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Modern Pool Deck</div>
+            <div class="overlay-sub">Pool Decks</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/hero-seatwall.png" tabindex="0" aria-label="Open full image: Concrete Seat Wall with LED Lighting">
+        <img src="images/hero-seatwall.png" alt="Concrete seat wall with integrated LED lighting" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Concrete Seat Wall with LED Lighting</div>
+            <div class="overlay-sub">Seat Walls</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/gallery-garage.png" tabindex="0" aria-label="Open full image: Polished Concrete Garage Floor">
+        <img src="images/gallery-garage.png" alt="Polished concrete garage floor with premium finish" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Polished Concrete Garage Floor</div>
+            <div class="overlay-sub">Garage Floors</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/gallery-shedpad.png" tabindex="0" aria-label="Open full image: Concrete Shed Pad Installation">
+        <img src="images/gallery-shedpad.png" alt="Concrete shed pad installation in Ohio" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Concrete Shed Pad Installation</div>
+            <div class="overlay-sub">Shed Pads</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/gallery-walkway.png" tabindex="0" aria-label="Open full image: Concrete Walkway">
+        <img src="images/gallery-walkway.png" alt="Decorative concrete walkway leading to front entrance" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Concrete Walkway</div>
+            <div class="overlay-sub">Walkways</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-full-item" role="listitem" data-lightbox="images/gallery-firepit.png" tabindex="0" aria-label="Open full image: Custom Fire Pit & Patio">
+        <img src="images/gallery-firepit.png" alt="Custom concrete fire pit surrounded by stamped patio" loading="lazy" />
+        <div class="overlay" aria-hidden="true">
+          <div>
+            <div class="overlay-text">Custom Fire Pit &amp; Patio</div>
+            <div class="overlay-sub">Fire Pits</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA SECTION
+     ============================================================ -->
+<section class="cta-band" aria-labelledby="gallery-cta-heading">
+  <div class="container">
+    <h2 id="gallery-cta-heading">Love What You See?</h2>
+    <p>Your dream driveway, patio, or outdoor living space is one phone call away. Contact us today for a free estimate on your concrete project.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn btn-primary btn-lg">Get Your Free Estimate</a>
+      <a href="about.html" class="btn btn-secondary btn-lg">Learn About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-main"><span>Robson</span> Concrete &amp; Construction</div>
+        <p>Northeast Ohio's premier concrete contractor. Serving homeowners and businesses with quality, durability, and craftsmanship for over 20 years.</p>
+        <div class="footer-contact-info">
+          <div class="footer-contact-item"><span class="icon">ð</span><a href="tel:4405550100" style="color:inherit;">(440) 555-0100</a></div>
+          <div class="footer-contact-item"><span class="icon">âï¸</span><a href="mailto:info@robsonconcrete.com" style="color:inherit;">info@robsonconcrete.com</a></div>
+          <div class="footer-contact-item"><span class="icon">ð</span><span>LaGrange, OH 44050</span></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services/driveways.html">Concrete Driveways</a></li>
+          <li><a href="services/patios.html">Concrete Patios</a></li>
+          <li><a href="services/walkways.html">Walkways &amp; Sidewalks</a></li>
+          <li><a href="services/shed-pads.html">Shed Pads</a></li>
+          <li><a href="services/garage-basement.html">Garage &amp; Basement Floors</a></li>
+          <li><a href="services/fire-pits.html">Fire Pits</a></li>
+          <li><a href="services/pool-decks.html">Pool Decks</a></li>
+          <li><a href="services/seat-walls.html">Seat Walls</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul class="footer-links">
+          <li><a href="cities/lagrange.html">LaGrange</a></li>
+          <li><a href="cities/elyria.html">Elyria</a></li>
+          <li><a href="cities/avon.html">Avon</a></li>
+          <li><a href="cities/avon-lake.html">Avon Lake</a></li>
+          <li><a href="cities/westlake.html">Westlake</a></li>
+          <li><a href="cities/north-ridgeville.html">North Ridgeville</a></li>
+          <li><a href="cities/lakewood.html">Lakewood</a></li>
+          <li><a href="index.html#areas">View All Areas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Free Estimate</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Robson Concrete &amp; Construction. All rights reserved. LaGrange, OH 44050</p>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-label="Image lightbox" aria-modal="true">
+  <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+  <img src="" alt="" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
